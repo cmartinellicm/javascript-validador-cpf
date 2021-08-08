@@ -1,4 +1,7 @@
-console.log("JavaScript carregado.");
+$(document).ready(function () {
+  $("#cpf_digitado").mask("000.000.000-00", { reverse: true });
+  $("#data_digitada").mask("00/00/0000");
+});
 
 function validaCPF(cpf) {
   console.log(cpf.length);

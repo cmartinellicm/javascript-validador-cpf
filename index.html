@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
+<html lang="pt-BR">
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>JavaScript Gama Academy</title>
+    <title>Verificação de Dados</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -24,7 +25,7 @@
 <body>
     <div class="jumbotron">
         <div class="container">
-            <h1 class="page-header">Validador de CPF</h1>
+            <h1 class="page-header">Validador de Dados Pessoais</h1>
             <p>Através deste simples algoritmo, veremos diversos recursos e habilidades da linguagem Javascript</p>
         </div>
 
@@ -32,9 +33,16 @@
     <div class="container formulario">
         <form>
             <div class="form-group">
-                <div class="input-group input-group-lg">
+                <!-- CPF -->
+                <div class="input-group input-group-lg input-format">
                     <span class="input-group-addon" id="sizing-addon1">CPF</span>
-                    <input id="cpf_digitado" type="text" class="form-control" placeholder="Digite o cpf para validação ..."
+                    <input id="cpf_digitado" type="text" class="form-control" placeholder="Digite o cpf para validação"
+                        aria-describedby="sizing-addon1">
+                </div>
+                <!-- Data Nascimento -->
+                <div class="input-group input-group-lg input-format">
+                    <span class="input-group-addon" id="sizing-addon2">Nascimento</span>
+                    <input id="data_digitada" type="text" class="form-control" placeholder="Digite sua data de nascimento"
                         aria-describedby="sizing-addon1">
                 </div>
                 <small class="form-text text-muted">Digite somente numeros</small>
@@ -59,6 +67,9 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
+
+<!-- jQuery mask plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
 <script src="./script.js"></script>
 
